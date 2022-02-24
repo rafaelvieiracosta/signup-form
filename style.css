@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./img/bg-intro-desktop 1.png");
+  background-color: #0077c7;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1140px;
+  padding: 20px;
+  gap: 60px;
+  align-items: center;
+}
+
+.info h1 {
+  font-size: 3.125rem;
+  line-height: 3.5rem;
+  color: #f5f7fa;
+}
+
+.info p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-top: 30px;
+  color: #f5f7fa;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input > p {
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #0b0c12;
+  color: #f5f7fa;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 0 0 rgba(11, 12, 18, 0.1);
+}
+
+.input > p span {
+  font-weight: 600;
+}
+
+.forms {
+  margin-top: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #f5f7fa;
+  box-shadow: 0 7px 0 0 rgba(11, 12, 18, 0.1);
+}
+
+.forms input {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding: 16px 32px;
+  font-weight: 600;
+  outline: none;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  background-color: #f5f7fa;
+  position: relative;
+}
+
+.forms input:focus {
+  border-color: #0077c7;
+}
+
+.forms button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #37cc8a;
+  color: #f5f7fa;
+  box-shadow: 0 5px 0 0 #34b67d;
+  cursor: pointer;
+}
+
+.forms button:hover {
+  background-color: #4dde9e;
+}
+
+.forms p {
+  font-size: 0.688rem;
+  text-align: center;
+}
+
+.forms p a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #0077c7;
+}
+
+.forms p a:hover {
+  color: #18a0fb;
+}
+
+@media (max-width: 800px) {
+  body {
+    display: block;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 60px 20px;
+  }
+  .info h1 {
+    font-size: 1.75rem;
+    line-height: 2.188rem;
+    text-align: center;
+  }
+  .info p{
+    text-align: center;
+  }
+  .forms{
+    padding: 24px;
+  }
+  .forms input{
+    padding: 17px 16px;
+  }
+}
+
