@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="./style.css">
   <title>Increver-se</title>
 </head>
+
 <body>
 
   <main>
@@ -21,15 +23,30 @@
     <div class="input">
       <p><span>Experimente grátis por 7 dias</span> e depois R$20/mês. </p>
       <form action="" class="forms" autocomplete="off">
-        <input type="text" id="nome" placeholder="Nome" class="error">
-        <input type="text" id="sobrenome" placeholder="Sobrenome">
-        <input type="email" id="email" placeholder="Endereço de e-mail">
-        <input type="password" id="senha" placeholder="Senha">
+        <div>
+          <input type="text" id="nome" placeholder="Nome">
+          <span class="error-span">O Primeiro Nome não pode ficar vazio</span>
+        </div>
+        <div>
+          <input type="text" id="sobrenome" placeholder="Sobrenome">
+          <span class="error-span">O Último Nome não pode ficar vazio</span>
+        </div>
+        <div>
+          <input type="email" id="email" placeholder="Endereço de e-mail">
+          <span class="error-span">Parece que isso não é um e-mail</span>
+        </div>
+        <div>
+          <input type="password" id="senha" placeholder="Senha">
+          <span class="error-span">A senha não pode ficar vazia</span>
+        </div>
+
         <button>Comece sua avaliação gratuita</button>
         <p>Ao clicar no botão, você concorda com nossos <a href="#">Termos e Serviços</a></p>
       </form>
     </div>
   </main>
-  
+
+  <script src="./script.js"></script>
 </body>
+
 </html>

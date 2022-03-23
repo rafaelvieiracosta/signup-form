@@ -75,6 +75,8 @@ main {
   border-radius: 5px;
   background-color: #f5f7fa;
   position: relative;
+  display: block;
+  width: 100%;
 }
 
 .forms input:focus {
@@ -113,6 +115,49 @@ main {
   color: #18a0fb;
 }
 
+.forms > div{
+  position: relative;
+}
+
+.forms .error {
+  border: 2px solid #FF7A7A;
+  color: #FF7A7A;
+}
+.forms .error::-webkit-input-placeholder {
+  color: #FF7A7A;
+}
+.forms .error:-moz-placeholder { 
+  color: #FF7A7A;  
+}
+.forms .error::-moz-placeholder {
+  color: #FF7A7A;  
+}
+.forms .error:-ms-input-placeholder {  
+  color: #FF7A7A;  
+}
+
+.forms > div.error-icon::after{
+  content: '';
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-image: url("./img/icon-error.svg");
+  position: absolute;
+  top: 16px;
+  right: 27px;
+}
+
+.error-span {
+  display: none;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.688rem;
+  letter-spacing: -0.01em;
+  text-align: right;
+  margin-top: 6px;
+  color: #FF7A7A;
+}
+
 @media (max-width: 800px) {
   body {
     display: block;
@@ -131,14 +176,13 @@ main {
     line-height: 2.188rem;
     text-align: center;
   }
-  .info p{
+  .info p {
     text-align: center;
   }
-  .forms{
+  .forms {
     padding: 24px;
   }
-  .forms input{
+  .forms input {
     padding: 17px 16px;
   }
 }
-
